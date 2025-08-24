@@ -321,9 +321,12 @@
       <div class="col-md-6">
         <input type="email" name="email" class="form-control" placeholder="Your Email" required>
       </div>
-      <div class="col-12">
-        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      <div class="col-md-12">
+        <input type="tel" name="mobile" class="form-control" placeholder="Your Mobile Number" pattern="[0-9]{10}" required>
       </div>
+        <div class="col-12">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message (eg: I want this book)" required></textarea>
+        </div>
       <div class="col-12 text-center">
         <button type="submit" class="btn btn-primary w-100 w-lg-auto">Send Message</button>
       </div>
@@ -376,7 +379,7 @@ document.querySelectorAll('.dropdown-item').forEach(item => {
     const form = document.getElementById("contactForm");
     form.addEventListener("submit", e => {
     e.preventDefault();
-    fetch("https://sheetdb.io/api/v1/xw5z0kpbu9yym", {  // replace with your SheetDB API link
+    fetch("https://sheetdb.io/api/v1/tgffn2xs7f8we", {  // replace with your SheetDB API link
       method: "POST",
       body: new FormData(form)
     })

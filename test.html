@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asad Husain Consulting</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts - Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    html {
+    scroll-behavior: smooth;
+    }
+
+
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+    .hero-text h1 {
+      font-weight: 700;
+    }
+    .logo-strip img {
+      max-height: 40px;
+      margin: 15px;
+      opacity: 0.8;
+    }
+    .service-card {
+      border-top: 3px solid #E63967;
+      padding: 20px;
+      border-radius: 8px;
+      background: #fff;
+      transition: all 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .service-card h5 {
+      color: #E63967;
+      font-weight: 600;
+    }
+    .btn-custom {
+      border: 2px solid #21546B;
+      color: #21546B;
+    }
+    .btn-custom:hover {
+      background: #21546B;
+      color: #fff;
+    }
+    .testimonial-card {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+
+    /* Mobile Fixes */
+    @media (max-width: 768px) {
+      #book .row {
+        width: 100% !important; /* full width on mobile */
+        padding: 1rem;
+        min-height: auto !important; /* let book blocks shrink on small screens */
+      }
+      .hero-text h1 {
+        font-size: 1.8rem; /* smaller heading on mobile */
+      }
+      .hero-text p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#21546B;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Wizarding_World_logo.svg/1280px-Wizarding_World_logo.svg.png" alt="Logo" style="height:40px;"> Wizarding
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#services">Service 1</a></li>
+            <li><a class="dropdown-item" href="#services">Service 2</a></li>
+            <li><a class="dropdown-item" href="#services">Service 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#book">My Book</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-danger px-3 w-100 w-lg-auto" href="#contact">Get In Touch</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="py-2">
+  <div class="container" style="background-color:#eaebd9 ;">
+    <div class="row align-items-center">
+      <div class="col-lg-6 hero-text">
+        <small class="text-uppercase text-muted">Transformative stories • Impactful • Strategic Coaching</small>
+        <h1 class="mt-3 fs-2 fs-lg-1">Fantastic Beasts –  <span class="text-danger">The Secrets  </span><br/> of <span class="text-danger">Dumbledore:</span> </h1>
+        <p class="mt-3">An epic tale of magic, betrayal, and the final stand for a world on the brink of oblivion.</p>
+        <div class="star-rating mb-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+            <span class="ms-2 text-muted">(4.1)</span>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" 
+             alt="Offer Logo" style="height:40px; margin-right:10px;">
+            <span class="badge bg-danger fs-6">70% OFF</span><br/>
+            </div>
+            <div class="d-flex mt-1 ">
+            <span class="ms-1 fs-5 text-muted text-decoration-line-through">$9.99</span>
+            <span class="ms-1 fs-5 "><b>$2.99</b></span>
+            </div>
+
+        <div class="mt-4 d-grid d-lg-flex gap-2">
+          <a href="#contact" class="btn btn-dark w-100 w-lg-auto">Get In Touch</a>
+          <a href="#services" class="btn btn-outline-dark w-100 w-lg-auto">More books</a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://m.media-amazon.com/images/I/71nm8tC+S0L._SL1500_.jpg" alt="Book Hero" class="img-fluid shadow" style="border-radius:12px; max-height:500px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Logos -->
+<section class="py-2 bg-light text-center logo-strip">
+  <h6 class="text-uppercase text-muted mb-3">As Featured In</h6>
+  <div class="d-flex flex-wrap justify-content-center align-items-center">
+    <img src="https://i.pinimg.com/736x/8b/b3/99/8bb3991dca3078f26bab8d07770f8d33.jpg" alt="Forbes">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSBkT_ICs7Q24P25aWQqzxOXj8fBx2ATgTg&s" alt="HRDirector">
+    <img src="data:image/png;base64,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" alt="FastCompany">
+    <img src="https://www.yourfirst10kreaders.com/wp-content/uploads/2015/03/New-York-Times-Logo.png" alt="HR" >
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+    <h6 class="text-uppercase text-muted">WANT TO EXPLORE MORE?</h6>
+    <h2 class="mb-5">Discover the wizarding world of <span class="text-danger"><b>Harry Potter</b></span></h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Harry Potter – Friends & Foes: A Movie Scrapbook</h5>
+          <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale,dpr_1.5/jackets/9781526653024.jpg" alt="HR Icon" class="img-fluid shadow" style="border-radius:4px ;"/>
+          <ul class="mt-3 text-start">
+           <li>Want to explore iconic Harry Potter friendships and rivalries?</li>
+            <li>Curious about behind-the-scenes secrets and concept art?</li>
+            <li>Looking for exclusive posters, stickers, and collectables?</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>The Harry Potter Wizarding<br/> Almanac </h5>
+          <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale,dpr_1.5/jackets/9781526646712.jpg" alt="Leadership Icon" class="img-fluid shadow" style="border-radius:4px; height: 390px; ;"/>
+          <ul class="mt-3 text-start">
+            <li>Want to explore wizarding lists, maps, and magical charts?</li>
+            <li>Curious about spells, beasts, and iconic Hogwarts secrets?</li>
+            <li>Looking for a dazzling, fully illustrated Harry Potter companion?</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Harry Potter – A Magical Year <br/> <br/></h5>
+          <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale,dpr_1.5/jackets/9781526640871.jpg" alt="Career Icon" class="img-fluid shadow" style="border-radius:4px; height: 390px; ;"/>
+          <ul class="mt-3 text-start">
+            <li>Want to relive Hogwarts through the changing seasons?</li>
+            <li>Love Jim Kay’s breathtaking Harry Potter illustrations?</li>
+            <li>Looking for a perfect gift filled with quotes, art, and memories?</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <a href="#contact" class="btn btn-custom px-4 w-100 w-lg-auto">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- About the Book Section -->
+<section id="book" class="py-2">
+  <div class="container">
+
+    <!-- Block 1 -->
+    <div class="row align-items-center mb-4" style="background:#f85c7e; color:white; border-radius:12px; padding-left:1rem; padding-right:1rem; min-height:90vh;">
+      <div class="col-lg-6 p-4 text-center">
+        <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_iw,h_ih/spreads/655739-1.jpg" alt="Book Cover" class="img-fluid shadow" style="border-radius:12px;">
+      </div>
+      <div class="col-lg-6 p-4">
+        <small class="text-uppercase">About the Book</small>
+        <h2 class="fw-bold mb-3 fs-3 fs-lg-2">Experience a New Epic Saga</h2>
+        <p class="lead">The Last Aetherium is a sprawling tale woven with high-stakes action</p>
+        <ul>
+          <li><b> The Shadow's Rise: </b>A long-dormant darkness awakens, threatening to consume the world and all its magic.</li>
+          <li><b> A Fractured World: </b>Watch as Kaelen must unite warring clans who would rather fight each other than face the greater threat.</li>
+          <li><b>The Ultimate Sacrifice:</b>Discover what it takes to save a world when the greatest betrayal comes from within.</li>
+        </ul>
+        <a href="#contact" class="btn btn-light mt-3 w-100 w-lg-auto">Sign Me Up</a>
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="row align-items-center mb-5" style="background:#21546B; color:white; border-radius:12px; padding-left:1rem; padding-right:1rem; min-height:70vh;">
+      <div class="col-lg-6 order-lg-2 p-4 text-center">
+        <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_iw,h_ih/spreads/655739-3.jpg" alt="Coaching" class="img-fluid shadow" style="border-radius:12px;">
+      </div>
+      <div class="col-lg-6 order-lg-1 p-4">
+        <small class="text-uppercase">About the Book</small>
+        <h2 class="fw-bold mb-3 fs-3 fs-lg-2">The Story Unfolds:Dive into the Conflict</h2>
+        <p class="lead">Personalized coaching for senior leaders navigating complex challenges.</p>
+        <ul>
+          <li><b>The Story Unfolds</b>Dive into the Conflict</li>
+          <li><b>A Fractured World:</b>Watch as Kaelen must unite warring clans who would rather fight each other than face the greater threat.</li>
+          <li><b>The Ultimate Sacrifice:</b>Discover what it takes to save a world when the greatest betrayal comes from within.</li>
+        </ul>
+        <a href="#contact" class="btn btn-light mt-3 w-100 w-lg-auto">Sign Me Up</a>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="row align-items-center" style="background:#f8f9fa; color:#000; border-radius:12px; padding-left:1rem; padding-right:1rem; min-height:70vh;">
+      <div class="col-lg-6 p-4 text-center">
+        <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_iw,h_ih/spreads/655739-5.jpg" alt="HR Transformation" class="img-fluid shadow" style="border-radius:12px;">
+      </div>
+      <div class="col-lg-6 p-4">
+        <small class="text-uppercase">About the Book</small>
+        <h2 class="fw-bold mb-3 fs-3 fs-lg-2">An Author's Note: The Road to The Last Aetherium</h2>
+        <p class="lead">Writing The Last Aetherium has been a journey almost as epic as the one Kaelen takes. </p>
+        <ul style="background:#21546B; color:#f8f9fa;">
+         <br/>
+          <li>The idea first came to me on a cold, rainy evening, where I found myself<br/>
+             pondering the nature of betrayal and redemption. I wanted to build a world that <br/>
+             felt both familiar and utterly new, a place where a hero wasn't born perfect but was <br/>
+             forged through hardship and painful choices. Every character, every magical relic, and <br/>
+             every scar on the world's surface was created with the hope of building a story that would<br/>
+             resonate with the epic fantasy fans I've always admired.</li>
+          
+          <br/>
+        </ul>
+        <a href="#contact" class="btn btn-dark mt-3 w-100 w-lg-auto">Sign Me Up</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What Readers Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4"><div class="testimonial-card"><p>"This book changed my perspective completely."</p><h6>- John Doe</h6></div></div>
+            <div class="col-md-4"><div class="testimonial-card"><p>"A must-read for anyone looking to grow personally and professionally."</p><h6>- Sarah Lee</h6></div></div>
+            <div class="col-md-4"><div class="testimonial-card"><p>"Beautifully written, practical, and inspiring."</p><h6>- Mark Smith</h6></div></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4"><div class="testimonial-card"><p>"Engaging and insightful from start to finish."</p><h6>- Emily Johnson</h6></div></div>
+            <div class="col-md-4"><div class="testimonial-card"><p>"Practical lessons I could apply instantly."</p><h6>- David Brown</h6></div></div>
+            <div class="col-md-4"><div class="testimonial-card"><p>"The best book I’ve read this year."</p><h6>- Sophia Wilson</h6></div></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form id="contactForm" class="row g-3 mx-auto" style="max-width:600px;">
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-12">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary w-100 w-lg-auto">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-dark text-white text-center">
+  <p class="mb-0">© 2025 Asad Husain Consulting. All Rights Reserved.</p>
+</footer>
+
+<!-- Popup Modal -->
+<div class="modal fade" id="purchaseModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Get Your Copy Now!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Don’t miss out on this amazing book. Order your copy today!</p>
+        <a href="#contact" id="purchaseBtn" class="btn btn-success w-100 w-lg-auto">Purchase</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Popup Trigger -->
+<script>
+  setTimeout(() => {
+    const myModal = new bootstrap.Modal(document.getElementById('purchaseModal'));
+    myModal.show();
+  }, 10000); // show after 10s
+
+  // Close navbar on item click (for mobile)
+document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const navbar = document.querySelector('.navbar-collapse');
+      if (navbar.classList.contains('show')) {
+        new bootstrap.Collapse(navbar).toggle();
+      }
+    });
+  });
+
+// Contact Form Submission
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch("https://sheetdb.io/api/v1/xw5z0kpbu9yym", {  // replace with your SheetDB API link
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then(response => {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    })
+    .catch(error => {
+      alert("❌ Error: " + error.message);
+    });
+  });
+
+  //popup button scroll to contact  
+document.getElementById("purchaseBtn").addEventListener("click", function (e) {
+    e.preventDefault(); // stop default jump
+
+    // close the modal
+    const modalEl = document.getElementById('purchaseModal');
+    const modal = bootstrap.Modal.getInstance(modalEl);
+    modal.hide();
+
+    // smooth scroll to contact section
+    document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+});
+</script>
+</body>
+</html>
